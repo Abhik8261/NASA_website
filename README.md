@@ -48,3 +48,7 @@ Backend: npm start
 Frontend: npm start
 
 Then open http://localhost:3000 in your browser.
+
+
+### ⚠️ Note on Performance
+This project is hosted on Render’s free tier, which may cause a few seconds of delay when loading content — especially on the first request after a period of inactivity. This is due to server “cold starts” and is not an issue with the website itself. Image-heavy content (like Mars Rover photos) may also take longer to load due to the size of NASA’s media.
