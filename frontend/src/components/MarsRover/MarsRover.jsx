@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Loading from '../Loader/Loader'
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const MarsRover = ({mode}) => {
   const [sol, setSol] = useState(1000);

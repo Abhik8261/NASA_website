@@ -13,7 +13,7 @@ import Loading from'../Loader/Loader'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const NeoViewer = ({ mode }) => {
   const [startDate, setStartDate] = useState('2024-05-01');

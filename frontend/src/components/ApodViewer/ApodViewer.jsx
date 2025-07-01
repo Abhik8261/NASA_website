@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loading from '../Loader/Loader'
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const ApodViewer = ({ date }) => {
   const [apod, setApod] = useState(null);
